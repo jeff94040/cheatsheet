@@ -3,7 +3,7 @@
 vboxmanage --version # Check VirtualBox version
 vboxmanage showvminfo <vmname> # Show VM info
 vboxmanage createvm --name=<vmname> --ostype=<enum> --register # Create new VM
-vboxmanage modifyvm <vmname> --vrde on --ioapic off # Enable VRDE and disable IOAPIC
+vboxmanage modifyvm <vmname> --vrde on --ioapic <on | off> # Enable VRDE. IOAPIC on for Win10
 vboxmanage list bridgedifs # List host network interfaces
 vboxmanage modifyvm <vmname> --nic1 bridged --bridgeadapter1 <hostintname> # Add bridged network interface
 vboxmanage modifyvm <vmname> --memory 2048 # Set VM's RAM in MB
