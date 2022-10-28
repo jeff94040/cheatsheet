@@ -1,3 +1,11 @@
+----- GIT -----
+git clone <https_url_to_repo> # Clone repo
+
+----- NPM -----
+npm list -g # List global packages
+npm update -g # Update global packages
+npm install -g <package_name> # Install global package
+
 ----- VirtualBox -----
 
 vboxmanage --version # Check VirtualBox version
