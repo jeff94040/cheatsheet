@@ -1,5 +1,10 @@
 ----- GIT -----
+git config --global user.email "<email>" # Once after client installation
+git config --global user.name "<name>" # Once after client installation
 git clone <https_url_to_repo> # Clone repo
+git add * # stages all new mods, dels, & creations to the git
+git commit -m "<msg>" # commits changes
+git push <remote> <branch> # pushes remote commits to branch (does not push the tags)
 
 ----- NPM -----
 npm list -g # List global packages
