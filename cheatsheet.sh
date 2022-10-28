@@ -14,10 +14,15 @@ npm install -g <package_name> # Install global package
 ----- VirtualBox -----
 
 vboxmanage --version # Check VirtualBox version
-vboxmanage showvminfo <vmname> # Show VM info
-vboxmanage createvm --name=<vmname> --ostype=<enum> --register # Create new VM
-vboxmanage modifyvm <vmname> --vrde on --ioapic <on | off> # Enable VRDE. IOAPIC on for Win10
+vboxmanage list vms # List all vms (running or not)
+vboxmanage list runningvms # List running vms
 vboxmanage list bridgedifs # List host network interfaces
+
+vboxmanage showvminfo <vmname> # Show VM info
+
+vboxmanage createvm --name=<vmname> --ostype=<enum> --register # Create new VM
+
+vboxmanage modifyvm <vmname> --vrde on --ioapic <on | off> # Enable VRDE. IOAPIC on for Win10
 vboxmanage modifyvm <vmname> --nic1 bridged --bridgeadapter1 <hostintname> # Add bridged network interface
 vboxmanage modifyvm <vmname> --memory 2048 # Set VM's RAM in MB
 
@@ -30,3 +35,5 @@ vboxmanage storageattach <vmname> --storagectl IDE --port 1 --device 0 --type dv
 
 vboxmanage startvm <vmname> --type headless # Start headless VM
 vboxmanage controlvm <vmname> poweroff # Shutdown VM
+
+vboxmanage unregistervm --delete <vmname> # Unregister and delete VM
