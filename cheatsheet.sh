@@ -3,10 +3,19 @@ ln -s <path_to_dest> <path_to_created_link> # Create soft link
 
 ----- APT -----
 sudo apt update # Update packages
+apt list --upgradable # List upgradable packages
 sudo apt upgrade # Update upgradable packages
 sudo apt install <package> # Install package
 sudo apt remove <package> # Remove package, not config files
 sudo apt purge <package> # Purges package, including config files
+sudo apt autoremove # Remove packages no longer needed
+
+----- SYSTEMD -----
+systemctl start <servicename> # Start service
+systemctl stop <servicename> # Stop service
+systemctl restart <servicename> # Restart service
+systemctl enable <servicename> # Enable service to start automatically
+systemctl disable <servicename> # Disable service from starting automatically
 
 ----- GIT -----
 git config --global user.email "<email>" # Once after client installation
