@@ -16,6 +16,7 @@ systemctl stop <servicename> # Stop service
 systemctl restart <servicename> # Restart service
 systemctl enable <servicename> # Enable service to start automatically
 systemctl disable <servicename> # Disable service from starting automatically
+journalctl -u <unitname>.service # View log for unit/service name
 
 ----- GIT -----
 git config --global user.email "<email>" # Once after client installation
