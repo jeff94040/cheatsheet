@@ -55,6 +55,6 @@ vboxmanage storagectl <vmname> --name "IDE" --add ide --controller PIIX4 # IDE c
 vboxmanage storageattach <vmname> --storagectl IDE --port 1 --device 0 --type dvddrive --medium <pathtoiso>.iso
 
 vboxmanage startvm <vmname> --type headless # Start headless VM
-vboxmanage controlvm <vmname> poweroff # Shutdown VM
+vboxmanage controlvm <vmname> acpipowerbutton # Gracefully shutdown VM
 
 vboxmanage unregistervm --delete <vmname> # Unregister and delete VM
