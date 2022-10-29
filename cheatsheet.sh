@@ -1,6 +1,13 @@
 ----- BASH -----
 ln -s <path_to_dest> <path_to_created_link> # Create soft link
 
+----- APT -----
+sudo apt update # Update packages
+sudo apt upgrade # Update upgradable packages
+sudo apt install <package> # Install package
+sudo apt remove <package> # Remove package, not config files
+sudo apt purge <package> # Purges package, including config files
+
 ----- GIT -----
 git config --global user.email "<email>" # Once after client installation
 git config --global user.name "<name>" # Once after client installation
