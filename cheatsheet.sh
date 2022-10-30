@@ -22,6 +22,7 @@ journalctl -u <unitname>.service # View log for unit/service name
 
 ----- CRON -----
 crontab -e # Edit crontab
+service cron restart # Restart cron service
 
 ----- GIT -----
 git config --global user.email "<email>" # Once after client installation
