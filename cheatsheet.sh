@@ -17,6 +17,7 @@ systemctl restart <servicename> # Restart service
 systemctl enable <servicename> # Enable service to start automatically
 systemctl disable <servicename> # Disable service from starting automatically
 systemctl daemon-reload # Reload changes to unit .service files
+systemctl list-units --type=service # List all services
 journalctl -u <unitname>.service # View log for unit/service name
 
 ----- GIT -----
