@@ -20,6 +20,9 @@ systemctl daemon-reload # Reload changes to unit .service files
 systemctl list-units --type=service # List all services
 journalctl -u <unitname>.service # View log for unit/service name
 
+----- CRON -----
+crontab -e # Edit crontab
+
 ----- GIT -----
 git config --global user.email "<email>" # Once after client installation
 git config --global user.name "<name>" # Once after client installation
