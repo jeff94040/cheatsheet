@@ -1,5 +1,6 @@
 ----- BASH -----
 ln -s <path_to_dest> <path_to_created_link> # Create soft link
+sudo ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime # Change system time zone
 
 ----- APT -----
 sudo apt update # Update packages
