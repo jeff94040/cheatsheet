@@ -1,4 +1,5 @@
 ----- BASH -----
+scp <source> <destination> # Copy files via ssh, e.g. <user>@<ip>:<path>
 ln -s <path_to_dest> <path_to_created_link> # Create soft link
 sudo ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime # Change system time zone
 du -sh * # Disk usage of all files/dirs in current dir, human readable
