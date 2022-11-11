@@ -7,6 +7,7 @@ sensors # check temps (mobo, cpu, pci)
 lscpu # cpu details
 htop # system utilization (memory, cpu)
 du -sh * # Disk usage of all files/dirs in current dir, human readable
+lsb_release -a # distro information
 
 ----- APT -----
 sudo apt update # Update packages
