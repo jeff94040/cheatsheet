@@ -46,7 +46,6 @@ npm update -g # Update global packages
 npm install -g <package_name> # Install global package
 
 ----- VirtualBox -----
-
 vboxmanage --version # Check VirtualBox version
 vboxmanage list vms # List all vms (running or not)
 vboxmanage list runningvms # List running vms
