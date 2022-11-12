@@ -1,6 +1,7 @@
 ----- BASH -----
 scp <source> <destination> # Copy files via ssh, e.g. <user>@<ip>:<path>
 ln -s <path_to_dest> <path_to_created_link> # Create soft link
+ctrl-r # Recall command
 sudo ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime # Change system time zone
 cat ~/.ssh/id_rsa.pub | ssh <user>@<hostip> "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys" # Copy public SSH key from client to server
 sensors # check temps (mobo, cpu, pci)
