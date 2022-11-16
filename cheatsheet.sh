@@ -41,7 +41,8 @@ git add * # stages all new mods, dels, & creations to the git
 git commit -m "<msg>" # commits changes
 git push <remote> <branch> # pushes remote commits to branch (does not push the tags)
 
------ NPM -----
+----- NPM / Node -----
+npm init # Creates new Node project
 npm list -g # List global packages
 npm update -g # Update global packages
 npm install -g <package_name> # Install global package
