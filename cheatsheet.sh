@@ -47,6 +47,7 @@ npm init # Creates new Node project
 npm list -g # List global packages
 npm update -g # Update global packages
 npm install -g <package_name> # Install global package
+npm install --save-dev <nodemon> # Install dev dependency
 
 ----- VirtualBox -----
 vboxmanage --version # Check VirtualBox version
