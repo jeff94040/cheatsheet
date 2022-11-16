@@ -34,6 +34,7 @@ crontab -e # Edit crontab
 service cron restart # Restart cron service
 
 ----- GIT -----
+# start by creating a new repo on github.com, then clone it locally
 git config --global user.email "<email>" # Once after client installation
 git config --global user.name "<name>" # Once after client installation
 git clone <https_url_to_repo> # Clone repo
