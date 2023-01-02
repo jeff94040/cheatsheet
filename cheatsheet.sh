@@ -74,3 +74,7 @@ vboxmanage startvm <vmname> --type headless # Start headless VM
 vboxmanage controlvm <vmname> acpipowerbutton # Gracefully shutdown VM
 
 vboxmanage unregistervm --delete <vmname> # Unregister and delete VM
+
+----- CERTBOT -----
+sudo certbot renew --dry-run # Test cert refresh, requires port 80
+sudo certbot renew # Cert refresh, requires port 80
