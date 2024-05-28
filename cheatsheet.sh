@@ -43,6 +43,9 @@ git clone <https_url_to_repo> # Clone repo
 git add * # stages all new mods, dels, & creations to the git
 git commit -m "<msg>" # commits changes
 git push <remote> <branch> # pushes remote commits to branch (does not push the tags)
+# remove deleted files from remote
+git commit -a -m "a file was deleted"
+git push
 
 ----- NPM / Node -----
 npm init # Creates new Node project
