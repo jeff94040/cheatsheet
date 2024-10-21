@@ -1,4 +1,5 @@
 ----- BASH -----
+ssh-keygen -t rsa # Generate public/private ssh key pair
 scp <source> <destination> # Copy files via ssh, e.g. <user>@<ip>:<path>
 ln -s <path_to_dest> <path_to_created_link> # Create soft link
 ctrl-r # Recall command
