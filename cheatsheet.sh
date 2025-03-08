@@ -8,7 +8,8 @@ cat ~/.ssh/id_rsa.pub | ssh <user>@<hostip> "mkdir -p ~/.ssh && cat >> ~/.ssh/au
 sensors # check temps (mobo, cpu, pci)
 lscpu # cpu details
 htop # system utilization (memory, cpu)
-du -sh * # Disk usage of all files/dirs in current dir, human readable
+df -h # disk usage
+du -sh * # disk usage in current dir
 lsb_release -a # distro information
 shasum -a 256 <file> # check sha256 hash
 md5sum <file> # md5 for MacOS. check md5 hash.
