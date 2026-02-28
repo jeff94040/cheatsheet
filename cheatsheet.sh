@@ -14,6 +14,7 @@ du -sh * # disk usage in current dir
 lsb_release -a # distro information
 shasum -a 256 <file> # check sha256 hash
 md5sum <file> # md5 for MacOS. check md5 hash.
+find . -type f -exec du -h {} + | sort -rh | head -n 10 # list 10 largest files in current directory
 
 ----- APT -----
 sudo apt update # Update packages
