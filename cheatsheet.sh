@@ -58,6 +58,15 @@ npm update -g # Update global packages
 npm install -g <package_name> # Install global package
 npm install --save-dev <nodemon> # Install dev dependency
 
+----- Restic -----
+export RESTIC_REPOSITORY="sftp:<user>@<hostname>:<path>"
+export RESTIC_PASSWORD_FILE="<path>"
+export RESTIC_SFTP_COMMAND="ssh -i ~/.ssh/id_rsa -o IdentitiesOnly=yes -o ServerAliveInterval=60 <user>@<hostname> -s sftp"
+
+restic init
+restic backup <path> <path> <path>
+restic forget --keep-daily 7 --keep-weekly 4 --keep-monthly 12 --prune
+
 ----- VirtualBox -----
 vboxmanage --version # Check VirtualBox version
 vboxmanage list vms # List all vms (running or not)
