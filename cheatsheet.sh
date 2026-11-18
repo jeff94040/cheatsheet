@@ -45,12 +45,27 @@ service cron restart # Restart cron service
 git config --global user.email "<email>" # Once after client installation
 git config --global user.name "<name>" # Once after client installation
 git clone <https_url_to_repo> # Clone repo
-git add * # stages all new mods, dels, & creations to the git
+git add . # stages all new mods, dels, & creations to the git
 git commit -m "<msg>" # commits changes
 git push <remote> <branch> # pushes remote commits to branch (does not push the tags)
 # remove deleted files from remote
 git commit -a -m "a file was deleted"
 git push
+# collaboration sequence
+# 1) sync and branch
+git checkout main # switch to main branch
+git pull origin main # ensure main branch is up to date
+git checkout -b jeff # create new branch
+# 2) do the work
+git add . # stage changes
+git commit -m "message" # commit changes
+git push -u origin jeff # push changes
+# 3) review and merge
+# open https://github.com, submit pull request, resolve changes, and merge branch
+# 4) clean up
+git checkout main
+git pull origin main
+git branch -d jeff
 
 ----- NPM / Node -----
 npm init # Creates new Node project
